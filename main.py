@@ -12,7 +12,7 @@ def main():
     user.position = 'captain'
     user.speciality = 'research engineer'
     user.address = 'module_1'
-    user.email = 'scott_chief@mard.org'
+    user.email = 'scott_chief@mars.org'
     db_sess.add(user)
     db_sess.commit()
     data = {1: {'name': 'River', 'surname': 'Song', 'age': 30, 'position': 'бортмеханик',
