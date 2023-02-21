@@ -7,12 +7,17 @@ h2, h3{
   margin: 0 auto;
 }
 
+#temp{
+margin-left: 10%;
+}
+
 h5{
 margin-left: 5%;
 }
 
 p{
-  margin-left: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 li{
