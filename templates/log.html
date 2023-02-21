@@ -3,10 +3,9 @@
 {% block content %}
 <br/>
 <h3>Works log</h3>
-{% set cnt = 1 %}
 {% for job in jobs %}
 {% set clr = "#c2ffde" if job[4] else "#fff6c1" %}
-<h5>Action #{{ cnt }}</h5>
+<h5>Action #{{ loop.index }}</h5>
 <table class="table">
   <thead class="thead-light">
     <tr class="d-flex" style="background-color: #e1e1e1">
@@ -27,6 +26,5 @@
     </tr>
   </tbody>
 </table>
-{% set cnt = cnt + 1 %}
 {% endfor %}
 {% endblock %}
