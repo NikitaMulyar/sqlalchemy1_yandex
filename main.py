@@ -42,6 +42,8 @@ def main():
     job.collaborators = '2, 3'
     job.start_date = datetime.datetime.now()
     job.is_finished = False
+    db_sess.add(job)
+    db_sess.commit()
 
 
 if __name__ == '__main__':
