@@ -59,7 +59,8 @@ def main():
             db_sess.commit()
 
     job = Jobs()
-    job.team_leader = 1
+    res = db_sess.query(User).filter(User.position == "captain").first()
+    job.team_leader = res.id
     job.job = 'deployment of residential modules 1 and 2'
     job.work_size = 15
     job.collaborators = '2, 3'
